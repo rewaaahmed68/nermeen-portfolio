@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nermeen Yasser | Electrical Technology & Technical Educator</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==== Preloader ==== -->
+  <div id="preloader">
+    <div class="loader-ring">
+      <div></div><div></div><div></div><div></div>
+    </div>
+    <p class="loader-text">Loading Portfolio...</p>
+  </div>
+
+  <!-- ==== Custom Cursor ==== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- ==== Scroll Progress ==== -->
+  <div class="scroll-progress"></div>
+
+  <!-- ==== Particles Background ==== -->
+  <canvas id="particles-js"></canvas>
+
+  <!-- ==== Navbar ==== -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-logo">NY</span>
+        <span class="brand-text">Nermeen<span class="gradient-text">.</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==== Hero Section ==== -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="hero-badge">
+            <i class="bi bi-lightning-charge-fill"></i> Electrical Technology Student
+          </span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Nermeen Yasser</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span id="typed-text"></span><span class="cursor-blink">|</span>
+          </h2>
+          <p class="hero-desc">
+            A fourth-year Electrical Technology student at Capital University with
+            hands-on experience in electrical machines, industrial control, PLC & SCADA,
+            and technical education. Passionate about shaping the next generation of
+            skilled technicians.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary-custom">
+              Get in Touch <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#projects" class="btn btn-outline-custom">
+              <i class="bi bi-folder2-open"></i> View Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center">
+          <div class="hero-image-wrapper">
+            <div class="rotating-ring ring-1"></div>
+            <div class="rotating-ring ring-2"></div>
+            <div class="rotating-ring ring-3"></div>
+            <div class="hero-image-inner">
+              <span class="initials">NY</span>
+              <span class="hero-role">Future Educator</span>
+            </div>
+            <div class="floating-icon icon-1"><i class="bi bi-lightning-charge-fill"></i></div>
+            <div class="floating-icon icon-2"><i class="bi bi-cpu-fill"></i></div>
+            <div class="floating-icon icon-3"><i class="bi bi-gear-fill"></i></div>
+            <div class="floating-icon icon-4"><i class="bi bi-plug-fill"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-box reveal">
+          <h3><span class="counter" data-target="4">0</span><span>th</span></h3>
+          <p>Academic Year</p>
+        </div>
+        <div class="stat-box reveal">
+          <h3><span class="counter" data-target="5">0</span><span>+</span></h3>
+          <p>Projects Built</p>
+        </div>
+        <div class="stat-box reveal">
+          <h3><span class="counter" data-target="6">0</span><span>+</span></h3>
+          <p>Training Areas</p>
+        </div>
+        <div class="stat-box reveal">
+          <h3><span class="counter" data-target="1">0</span></h3>
+          <p>PLC Certification</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ==== About Section ==== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Summary</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="about-card reveal">
+            <p>
+              I'm a fourth-year <strong>Electrical Technology</strong> student at
+              <strong>Capital University, Faculty of Technology and Education</strong>,
+              with academic knowledge and practical experience in electrical systems,
+              electrical machines, industrial control, and automation.
+            </p>
+            <p>
+              I've delivered theoretical and practical lessons in <strong>Electrical Machines</strong>
+              during teaching training at <strong>Helwan Industrial Girls School</strong>, and
+              completed industrial training at <strong>Misr Spinning and Weaving Company</strong>,
+              gaining practical exposure to electrical installations, lighting systems, electric
+              motors, control panels, steam power stations, and motor winding.
+            </p>
+            <p class="mb-0">
+              I'm deeply interested in <strong>Technical Education, Industrial Automation,
+              Electrical Maintenance, and professional development</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="info-card reveal">
+            <div class="info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div><span>Location</span><strong>Cairo, Egypt</strong></div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-envelope-fill"></i>
+              <div><span>Email</span><strong class="small-email">nermeenelrodiny05@gmail.com</strong></div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-mortarboard-fill"></i>
+              <div><span>Level</span><strong>Fourth Year</strong></div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-calendar-event-fill"></i>
+              <div><span>Graduation</span><strong>2027</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== Experience Timeline ==== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Journey</span>
+        <h2 class="section-title">Education & <span class="gradient-text">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="bi bi-calendar3"></i> Expected 2027</span>
+            <h4>Capital University</h4>
+            <p class="timeline-sub">Faculty of Technology and Education — Electrical Technology</p>
+            <p class="mb-0">Fourth-year student specializing in electrical systems, electrical machines, industrial control, and automation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="bi bi-briefcase"></i> One Academic Semester</span>
+            <h4>Electrical Technology Trainee Teacher</h4>
+            <p class="timeline-sub">Helwan Industrial Girls School</p>
+            <ul>
+              <li>Delivering theoretical and practical lessons in Electrical Machines.</li>
+              <li>Explaining technical concepts to students.</li>
+              <li>Developing teaching and presentation skills.</li>
+              <li>Supporting students in understanding electrical technology subjects.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="bi bi-buildings"></i> One Month</span>
+            <h4>Industrial Training</h4>
+            <p class="timeline-sub">Misr Spinning and Weaving Company — El Mahalla El Kubra</p>
+            <ul>
+              <li>Electrical Installations</li>
+              <li>Electrical Lighting Systems</li>
+              <li>Electric Motors</li>
+              <li>Electrical Control Panels</li>
+              <li>Steam Power Station</li>
+              <li>Electric Motor Winding</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="bi bi-award"></i> April 2026</span>
+            <h4>Specialized Training in PLC & SCADA</h4>
+            <p class="timeline-sub">EISAC — Air Craft Automation</p>
+            <ul>
+              <li>Siemens S7-1200 PLC</li>
+              <li>SCADA Systems</li>
+              <li>Certificate of Appreciation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== Projects Section ==== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Academic & <span class="gradient-text">Practical Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card tilt-card reveal">
+            <div class="project-icon"><i class="bi bi-droplet-fill"></i></div>
+            <h4>Water Alarm System</h4>
+            <p>Water level detection and alarm system built using IC 555 timer with a buzzer circuit.</p>
+            <div class="project-tags"><span>IC 555</span><span>Electronics</span></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card tilt-card reveal">
+            <div class="project-icon"><i class="bi bi-activity"></i></div>
+            <h4>Rectifier Circuits</h4>
+            <p>Design and analysis of half-wave and full-wave rectifier circuits with filtering.</p>
+            <div class="project-tags"><span>Power Electronics</span><span>Circuits</span></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card tilt-card reveal">
+            <div class="project-icon"><i class="bi bi-toggle-on"></i></div>
+            <h4>SCR Applications</h4>
+            <p>Silicon Controlled Rectifier applications in power control and switching circuits.</p>
+            <div class="project-tags"><span>SCR</span><span>Power Control</span></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card tilt-card reveal">
+            <div class="project-icon"><i class="bi bi-arrow-repeat"></i></div>
+            <h4>Star-Delta Motor Control</h4>
+            <p>Star-Delta starting control circuit for three-phase induction motors.</p>
+            <div class="project-tags"><span>Motor Control</span><span>3-Phase</span></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card tilt-card reveal">
+            <div class="project-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h4>Siemens PLC Projects</h4>
+            <p>Practical PLC projects built on Siemens S7-1200 with automation logic design.</p>
+            <div class="project-tags"><span>Siemens</span><span>Automation</span></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card tilt-card reveal more-card">
+            <div class="project-icon"><i class="bi bi-plus-lg"></i></div>
+            <h4>More Coming...</h4>
+            <p>Continuously building new projects in automation, control systems, and technical education.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== Skills Section ==== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Technical Skills -->
+      <h4 class="skill-heading reveal"><i class="bi bi-tools"></i> Technical Skills</h4>
+      <div class="row g-3 mb-5">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-lightning-charge-fill"></i><span>Electrical Circuits</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-gear-fill"></i><span>Electrical Machines</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-cpu-fill"></i><span>PLC Programming</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-memory"></i><span>Siemens PLC</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-diagram-3-fill"></i><span>Power Electronics</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-plug-fill"></i><span>Electrical Installation</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-gear-wide-connected"></i><span>Motor Control</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-arrow-repeat"></i><span>Star-Delta Starting</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-circle-square"></i><span>IC 555 Applications</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-file-earmark-word-fill"></i><span>Microsoft Word</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card reveal"><i class="bi bi-file-earmark-slides-fill"></i><span>Microsoft PowerPoint</span></div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <h4 class="skill-heading reveal"><i class="bi bi-person-heart"></i> Soft Skills</h4>
+      <div class="soft-skills mb-5 reveal">
+        <span class="soft-pill">Communication</span>
+        <span class="soft-pill">Presentation</span>
+        <span class="soft-pill">Leadership</span>
+        <span class="soft-pill">Teamwork</span>
+        <span class="soft-pill">Problem Solving</span>
+        <span class="soft-pill">Time Management</span>
+      </div>
+
+      <!-- Languages -->
+      <h4 class="skill-heading reveal"><i class="bi bi-translate"></i> Languages</h4>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="lang-card reveal">
+            <div class="lang-head"><span>🇪🇬 Arabic</span><strong>Native</strong></div>
+            <div class="progress" data-percent="100"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="lang-card reveal">
+            <div class="lang-head"><span>🇬🇧 English</span><strong>Very Good</strong></div>
+            <div class="progress" data-percent="80"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== Interests Section ==== -->
+  <section id="interests" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Passions</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Interests</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="interest-card reveal"><i class="bi bi-mortarboard-fill"></i><span>Technical Education</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="interest-card reveal"><i class="bi bi-lightning-charge-fill"></i><span>Electrical Technology</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="interest-card reveal"><i class="bi bi-robot"></i><span>Industrial Automation</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="interest-card reveal"><i class="bi bi-cpu-fill"></i><span>PLC & SCADA</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="interest-card reveal"><i class="bi bi-wrench-adjustable"></i><span>Electrical Maintenance</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="interest-card reveal"><i class="bi bi-gear-fill"></i><span>Electrical Machines</span></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="interest-card reveal"><i class="bi bi-sliders"></i><span>Industrial Control</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== Contact Section ==== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <a href="mailto:nermeenelrodiny05@gmail.com" class="contact-card reveal">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <h5>Email Me</h5>
+            <p>nermeenelrodiny05@gmail.com</p>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <h5>Location</h5>
+            <p>Cairo, Egypt</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+  <a href="tel:+201094086639" class="contact-card reveal">
+    <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+    <h5>Call Me</h5>
+    <p>+201094086639</p>
+  </a>
+</div>
+
+      <div class="career-objective reveal mt-5">
+        <i class="bi bi-bullseye"></i>
+        <h4>Career Objective</h4>
+        <p>
+          Seeking opportunities in Technical Education, particularly Electrical Technology
+          Teaching, while also exploring industrial training and employment opportunities in
+          electrical engineering and industrial automation. Aiming to develop professional
+          teaching abilities, strengthen practical technical knowledge, and contribute to the
+          development of skilled technical students.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== Footer ==== -->
+  <footer class="footer">
+    <div class="container text-center">
+      <h5 class="gradient-text">Nermeen Yasser</h5>
+      <p>Electrical Technology Student · Future Technical Educator</p>
+      <p class="footer-email"><i class="bi bi-envelope-fill"></i> nermeenelrodiny05@gmail.com</p>
+      <div class="footer-line"></div>
+      <p class="copyright">© <span id="year"></span> Nermeen Yasser — All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <a href="#home" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
